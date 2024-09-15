@@ -13,7 +13,7 @@ export const fetchAnimeList = async (mode) =>
 export const fetchAnimeOngoing = async () =>
 {
   try {
-    const response = await axios.get('http://ranimev2-api.vercel.app/kuramanime/ongoing/popular')
+    const response = await axios.get('http://api-otaku.vercel.app/api/anime/ongoing')
     return response.data
   } catch (error) {
     console.log(error)
@@ -33,7 +33,7 @@ export const fetchAnimeUpdate = async () =>
 export const fetchAnimeMovies = async () =>
 {
   try {
-    const response = await axios.get('https://mama-api.vercel.app/anime/movie')
+    const response = await axios.get('https://api-otaku.vercel.app/api/anime/movie')
     return response.data
   } catch (error) {
     console.log(error)
