@@ -13,7 +13,7 @@ export const fetchAnimeList = async (mode) =>
 export const fetchAnimeOngoing = async () =>
 {
   try {
-    const response = await axios.get('https://kurumi-api.vercel.app/anime/ongoing')
+    const response = await axios.get('http://ranimev2-api.vercel.app/kuramanime/ongoing/popular')
     return response.data
   } catch (error) {
     console.log(error)
